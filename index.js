@@ -4,12 +4,12 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  var item = document.getElementById('nested')//.getElementsByClassName('target')
+  var item = document.getElementById('nested')
   return item
 }
 
 function increaseRankBy(n) {
-  const lis = document.getElementsByClassName('div.ranked-list')
+  var lis = document.getElementsByClassName('div.ranked-list')
     for (let i = 0; i < lis.length; i++) {
     lis[i].innerHTML = parseInt(lis[i].innerHTML) + n
   }
